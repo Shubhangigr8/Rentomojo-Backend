@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "11024b01-d9b2-4993-8506-3a2cace39d2f",
+		"name": "admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"demo@yopmail.com\",\r\n    \"password\": \"password\"\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/admin/signup/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"demo@yopmail.com\",\r\n    \"password\": \"password\"\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/admin/login/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checktoken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGVtb0B5b3BtYWlsLmNvbSIsImlhdCI6MTYxMTQ2NjM3OCwiZXhwIjoxNjExNDY5OTc4fQ.rz-39fpIxKr-Q72CXV5t5YVgMhVcsD_5y3c7U1dv4eQd",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:3000/checktoken",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"checktoken"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
